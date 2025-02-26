@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejal Kadam | Portfolio</title>
+    <style>
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        header {
+            background-color: #6c5ce7;
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+            background-color: white;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero-text span {
+            color: #6c5ce7;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6c5ce7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .download-btn {
+            background-color: #ff7675;
+        }
+
+        .section {
+            padding: 50px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 10px 15px;
+            background: #6c5ce7;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .projects-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        #contact p a {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background: #6c5ce7;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Sejal Kadam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Hello, I'm <span>Sejal Kadam</span></h2>
+                <p>A passionate Web Developer with expertise in <strong>HTML, CSS, JavaScript</strong> and <strong>Responsive Design</strong>.</p>
+
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="myresume.pdf" class="btn download-btn" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container section">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="photo.jpeg" alt="Sejal Kadam" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+        <p>I am a web developer who enjoys creating modern, user-friendly websites and applications. With a strong foundation in **frontend development**, I specialize in crafting **responsive and interactive web experiences**.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">MySQL</div>
+        </div>
+    </section>
+
+    <section id="projects" class="container section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="ll.png" alt="Project 1">
+                <h3>Landing Page</h3>
+                <p>A responsive landing page using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project">
+                <img src="k2.png" alt="Project 2">
+                <h3>To-Do List</h3>
+                <p>A simple yet powerful to-do list web app.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="container section">
+        <h2>Resume</h2>
+        <p>Download my resume below:</p>
+        <a href="myresume.pdf" class="btn download-btn" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="container section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:kadamsejal25@gmail.com">kadamsejal25@gmail.com</a></p>
+        <p>Phone: <a href="tel:8431949065">8431949065</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sejal Kadam. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
